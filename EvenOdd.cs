@@ -17,18 +17,18 @@ namespace c_training
                 Console.Write($"element - {i} : ");
                 numbers[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("\nThe even numbers are:");
+            Console.WriteLine("\nThe even numbers are:"); // for even numbers
             foreach (var item in numbers)
             {
-                if (item % 2 == 0)
+                if (item % 2 == 0)   // remainder is 0 which == zero  
                 {
                     Console.Write(item + " ");
                 }
             }
-            Console.WriteLine("\nThe Odd elements are:");
+            Console.WriteLine("\nThe Odd elements are:");  // for odd numbers
             foreach (var item in numbers)
             {
-                if (item % 2 != 0)
+                if (item % 2 != 0) // remainder is not 0 then not equal to o
                 {
                     Console.Write(item + " ");
                 }
