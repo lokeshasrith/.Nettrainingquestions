@@ -29,3 +29,8 @@ namespace c_training
         }
     }
 }
+
+// Key Points:
+
+// A static class cannot be instantiated.
+// All members (methods, variables) must be static.
