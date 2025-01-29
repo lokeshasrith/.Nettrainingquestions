@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 // Implicit (Default) Constructor:
 
 // If you don’t define a constructor, the C# compiler adds a hidden parameterless constructor automatically.
@@ -14,25 +10,27 @@ using System.Threading.Tasks;
 // Booleans: false
 
 // Objects/strings: null
-namespace c_training
+using System;
+
+class Test
 {
-    public class test
+    public int i;   // Default value = 0
+    public bool b;  // Default value = false
+    public string s; // Default value = null
+}
+
+class Program
+{
+    static void Main()
     {
-        public int a;
-        public bool b;
-        public string c;
-    } // Compiler adds a hidden constructor to initialize Number=0, Flag=false, Text=null.  
-  
-  class Program
-  {
-      static void Main()
-      {
-          test IT = new test();
-          Console.WriteLine($"a = {IT.a}");
-          Console.WriteLine($"b = {IT.b}");
-          if (IT.c == null)
-          {
-              Console.WriteLine("c = Null");
-          }
+        Test obj = new Test();  // Calls the implicit constructor
+        Console.WriteLine($"i = {obj.i}");  // Output: i = 0
+        Console.WriteLine($"b = {obj.b}");  // Output: b = False
+
+        if (obj.s == null)
+        {
+            Console.WriteLine("s = null");  // Output: s = null
+        }
     }
 }
+
