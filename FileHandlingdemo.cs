@@ -33,3 +33,8 @@ namespace c_training
         }
     }
 }
+
+// object
+FileHandlingdemo transaction = new FileHandlingdemo(4405, "LA", "Purchase", "Debit");
+
+transaction.CreateTransaction();
