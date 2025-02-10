@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <center>The pattern attribute in an "input" field is used to define a regular expression (RegEx) that specifies allowed input formats.
+            This is useful for validation before submitting a form.</center>
+    </head>
+<body>
+    <form name="frmData">
+        <center>
+            Mobile No :
+            <input type="text" name="mobile" pattern="[0-9]{10}" /> <br/><br/>
+            Aadhar No :
+            <input type="text" name="aadhar"
+                pattern="[0-9]{4} [0-9]{4} [0-9]{4}" /> <br/><br/>
+            <input type="submit" value="Show" />
+        </center>
+    </form>
+</body>
+</html>
