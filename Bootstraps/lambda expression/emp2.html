@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            employees = [
+                {empno:1,name:'kksk',basic:52344},
+                {empno:2,name:'LA',basic:90032},
+                {empno:3,name:'Lokesh',basic:87732},
+                {empno:4,name:'VARDHAN',basic:87742},
+                {empno:5,name:'SANDEEP',basic:78832},
+            ]
+            const show = () => {
+                console.log(employees.filter(e => e.basic >= 80000));
+            }
+        </script>
+    </head>
+    <body onload="show()"></body>
+</html>
+
+<!-- employees.filter(e => e.basic >= 80000)
+Iterates through the employees array.
+Selects only employees where e.basic is 80,000 or more.
+console.log(...) prints the resulting filtered array. -->

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            let url = "https://jsonplaceholder.typicode.com/users";
+
+            const show = () => {
+                fetch(url)
+                .then(res => res.json())
+                .then(out=> {
+                    console.log(out);
+
+                    for(var v in out) {
+                        document.writeln(
+                            "id : <b>" + out[v].id + "</b> Name : <b>" + out[v].name+ "</b><br>"
+                        )
+                    }
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            show();
+        </script>
+    </body>
+</html>
+<!-- Set API URL
+
+let url = "https://jsonplaceholder.typicode.com/users";
+This URL contains fake user data.
+Fetch Data from API
+
+fetch(url).then(res => res.json())
+This retrieves data from the API and converts it to JSON format.
+Display Data on Webpage
+
+for(var v in out) → Loops through each user in the data.
+document.writeln() → Displays User ID and Name in bold.
+Call the show() Function
+
+<script> show(); </script> runs the function when the page loads. -->
